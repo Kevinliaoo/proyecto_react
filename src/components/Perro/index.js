@@ -1,14 +1,15 @@
+import React from 'react';
+
 import config from '../../utils/config';
 
-const Perro = (props) => {
-	const imageClicked = () => {
-		window.localStorage.setItem(config.image, props.url);
-		props.props.history.push('/perro');
+const Perro = ({ url }) => {
+	const clickeado = () => {
+		window.localStorage.setItem(config.llaveImagen, url);
 	};
 
 	return (
-		<div className="perro" onClick={imageClicked}>
-			<img className="perro__img" src={props.url} alt="Foto de perro" />
+		<div className="perro" onClick={clickeado}>
+			<img className="perro__imagen" src={url} alt="Foto de perro" />
 		</div>
 	);
 };

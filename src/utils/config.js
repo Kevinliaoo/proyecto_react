@@ -1,3 +1,5 @@
-export default {
-	image: 'img_url',
+const datos = {
+	llaveImagen: 'URLIMG',
 };
+
+export default datos;
