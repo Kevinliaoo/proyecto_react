@@ -1,7 +1,6 @@
 import config from '../../utils/config';
 
 const Descripcion = (props) => {
-	console.log(props);
 	const img_url = window.localStorage.getItem(config.image);
 
 	const volver = () => {

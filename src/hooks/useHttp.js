@@ -18,7 +18,7 @@ const useGet = ({ url, initiState = [], params }) => {
 		get();
 	}, [url]);
 
-	return [null, data, loading];
+	return [null, data.message, loading];
 };
 
 export default useGet;
